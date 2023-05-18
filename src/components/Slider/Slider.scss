@@ -1,0 +1,275 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+.slider {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    @include onMobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 0;
+      align-items: flex-end;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 32px;
+      color: $dark-blue-c;
+      line-height: 40px;
+    }
+  }
+
+  &__cards {
+    margin: 24px 0 0;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    margin-bottom: -120px;
+  }
+
+  &__card {
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    @include onMobile {
+      width: 300px;
+    }
+
+    @include onTablet {
+      width: 340px;
+    }
+    &-price {
+      margin-top: 8px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      color: $dark-blue-button-c;
+    }
+
+    &-info {
+      display: flex;
+      margin-top: 24px;
+      gap: 16px;
+
+      @include onMobile {
+        width: 100px;
+      }
+
+      @include onTablet {
+        width: 100%
+      }
+    }
+
+    &-title {
+      margin-top: 24px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: $building-title-c;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    @include onTablet {
+      position: absolute;
+      top: 1720px;
+      left: 7%;
+      width: 93%;
+      z-index: 5;
+    }
+
+    @include onDesktop {
+      position: static;
+      width: auto;
+    }
+  }
+
+
+  &__button {
+    margin-left: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #0f0f11;
+    text-decoration: none;
+    border: 1px solid #e2e6e9;
+    border-radius: 32px;
+    cursor: pointer;
+    background-color: $green-for-buttons-c;
+    color: $white-c;
+
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      padding: 18px 22px;
+    }
+
+    &:disabled {
+      background-color: $gray-border-c;
+      color: $dark-blue-button-c;
+    }
+  }
+
+  &__filter-buttons {
+    display: flex;
+    @include onMobile {
+      gap: 6px;
+    }
+
+    @include onTablet {
+      gap: 32px;
+    }
+  }
+
+  &__filter-button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: $partherships-c;
+    background-color: $white-background;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    border:  1px solid $gray-border-c;
+    border-radius: 32px;
+
+    @include onMobile {
+      padding: 6px;
+    }
+
+    @include onTablet {
+      padding: 12px 24px 12px 27px;
+    }
+  }
+
+  &__head-title__container {
+    display: flex;
+    gap: 12px;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      flex-direction: column;
+    }
+  }
+
+  &__filter-icon {
+    position: relative;
+    bottom: 1px;
+  }
+
+  &__image {
+    height: 382px;
+    border-radius: 24px;
+
+    @include onMobile {
+      width: 300px;
+    }
+
+    @include onTablet {
+      width: 340px;
+    }
+  }
+
+  &__head-title--first-part {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    right: 40px;
+
+    &-image {
+      width: 32px;
+      height: 2px;
+    }
+  
+    &-text {
+      color: $yellow-c;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__owner {
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    &-name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: $building-title-c;
+
+      @include  onMobile {
+        width: max-content;
+      }
+
+      @include onTablet {
+        width: auto;
+      }
+    }
+
+    &-location {
+      color: $partherships-c;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+
+      @include onMobile {
+        width: max-content;
+      }
+  
+      @include onTablet {
+        width: auto;
+      }
+    }
+  }
+
+  &__modal {
+    border-radius: 32px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+
+    @include onMobile {
+      bottom: 190px;
+      left: 16px;
+    }
+
+    @include onTablet {
+      left: 16px;
+    }
+
+    &-image {
+      margin-right: 12px;
+    }
+  }
+}
+
+
+.isActive {
+  background-color: $mint-c;
+  color: $green-for-buttons-c;
+}

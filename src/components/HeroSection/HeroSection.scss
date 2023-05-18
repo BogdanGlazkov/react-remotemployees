@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .hero-section {
   &__container {
@@ -32,12 +32,12 @@
     width: 18px;
 
     @media (max-width: 1250px) {
-      margin: 17px 13px 17px 20px;  
+      margin: 17px 13px 17px 20px;
     }
   }
 
   &__main-page-image {
-    @include onMobile{
+    @include onMobile {
       width: 300px;
     }
 
@@ -92,7 +92,6 @@
     }
 
     &::placeholder {
-
       @include onMobile {
         font-size: 11px;
       }
@@ -117,21 +116,20 @@
   }
 
   &__title {
-    font-family: 'Lexend';
+    font-family: "Lexend";
     font-weight: 600;
     font-size: 40px;
     line-height: 50px;
     color: $dark-blue-c;
     text-transform: capitalize;
 
-    @include onMobile{
+    @include onMobile {
       text-align: center;
     }
 
     @include onDesktop {
-      text-align: inherit
+      text-align: inherit;
     }
-
 
     &--transparent {
       display: inline-block;
@@ -166,6 +164,9 @@
 
     @include onTablet {
       width: auto;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 
@@ -205,5 +206,9 @@
   position: absolute;
   z-index: -1;
   height: 424px;
-  background-image: linear-gradient(to bottom right, rgba(130, 187, 255, 0.2) 20%, white 60%);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(130, 187, 255, 0.2) 20%,
+    white 60%
+  );
 }

@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .contact-section {
   padding-top: 120px;
@@ -9,7 +9,7 @@
   &__info-container {
     position: relative;
     top: 18px;
-    margin-bottom:  60px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
 
@@ -175,7 +175,7 @@
       padding: 13px 8px 13px 11px;
     }
 
-    @include onTablet{
+    @include onTablet {
       padding: 13px 16px 13px 21px;
     }
   }
@@ -189,7 +189,7 @@
       padding-left: 20px;
     }
 
-    @include onTablet{
+    @include onTablet {
       padding-left: 40px;
     }
   }
@@ -224,7 +224,7 @@
   }
 
   &__interior-image {
-    position: relative; 
+    position: relative;
     cursor: pointer;
 
     @include onMobile {
@@ -237,7 +237,7 @@
     }
 
     &--second {
-      position: relative; 
+      position: relative;
       cursor: pointer;
       margin-right: 8px;
 
@@ -294,8 +294,11 @@
   z-index: -1;
 
   height: 694px;
-  background: radial-gradient(circle at center, rgba(255, 250, 130, 1), white 60%);
-
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 250, 130, 1),
+    white 60%
+  );
 
   @include onMobile {
     width: 638px;
@@ -310,13 +313,16 @@
   }
 }
 
-
 .color-gradient--orange {
   position: absolute;
   z-index: -1;
 
   height: 594px;
-  background: radial-gradient(circle at center,rgba(255, 152, 130, 0.4)  , transparent 50%);
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 152, 130, 0.4),
+    transparent 50%
+  );
 
   @include onMobile {
     bottom: 90px;

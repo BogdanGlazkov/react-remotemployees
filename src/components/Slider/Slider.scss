@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .slider {
   &__head {
@@ -61,7 +61,7 @@
       }
 
       @include onTablet {
-        width: 100%
+        width: 100%;
       }
     }
 
@@ -91,7 +91,6 @@
       width: auto;
     }
   }
-
 
   &__button {
     margin-left: 16px;
@@ -144,7 +143,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    border:  1px solid $gray-border-c;
+    border: 1px solid $gray-border-c;
     border-radius: 32px;
 
     @include onMobile {
@@ -198,7 +197,7 @@
       width: 32px;
       height: 2px;
     }
-  
+
     &-text {
       color: $yellow-c;
       font-weight: 500;
@@ -213,14 +212,14 @@
       flex-direction: column;
       gap: 4px;
     }
-  
+
     &-name {
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
       color: $building-title-c;
 
-      @include  onMobile {
+      @include onMobile {
         width: max-content;
       }
 
@@ -238,7 +237,7 @@
       @include onMobile {
         width: max-content;
       }
-  
+
       @include onTablet {
         width: auto;
       }
@@ -267,7 +266,6 @@
     }
   }
 }
-
 
 .isActive {
   background-color: $mint-c;

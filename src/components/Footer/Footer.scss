@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .footer {
   position: relative;
@@ -33,6 +33,7 @@
     font-size: 16px;
     color: $dark-blue-c;
     line-height: 20px;
+    cursor: pointer;
   }
 
   &__logo-paragraph {
@@ -75,6 +76,11 @@
     font-size: 18px;
     line-height: 23px;
     color: $building-title-c;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__addictional-paragraphs {
@@ -87,6 +93,14 @@
     line-height: 18px;
     color: $partherships-c;
   }
+
+  &__addictional-paragraph {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .gradient {
@@ -95,7 +109,11 @@
     z-index: -1;
     bottom: -90px;
     right: 0px;
-    background: radial-gradient(circle at 100% 100%, rgba(130, 187, 255, 0.5), transparent 40%);
+    background: radial-gradient(
+      circle at 100% 100%,
+      rgba(130, 187, 255, 0.5),
+      transparent 40%
+    );
 
     @include onMobile {
       width: 310px;
@@ -113,7 +131,11 @@
     z-index: -1;
     bottom: -90px;
     right: 100px;
-    background: radial-gradient(circle at 50% 100%, rgba(185, 255, 130, 0.5), transparent 40%);
+    background: radial-gradient(
+      circle at 50% 100%,
+      rgba(185, 255, 130, 0.5),
+      transparent 40%
+    );
 
     @include onMobile {
       width: 310px;

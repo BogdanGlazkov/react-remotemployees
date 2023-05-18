@@ -1,4 +1,4 @@
-@import '../utils/mixins.scss';
+@import "../utils/mixins.scss";
 
 .grid {
   display: grid;
@@ -10,7 +10,6 @@
   }
 
   @include onDesktop {
-    
     grid-template-columns: repeat(36, 1fr);
   }
 

@@ -1,5 +1,4 @@
-@import '../../utils/variables.scss';
-// @import '../../styles/mixins.scss';
+@import "../../utils/variables.scss";
 
 .modal {
   position: fixed;
@@ -20,7 +19,6 @@
     left: 315px;
     display: flex;
     position: fixed;
-
   }
 }
 .modalconent {
@@ -33,7 +31,6 @@
   border-radius: 15px;
   position: absolute;
 }
-
 
 .container {
   display: flex;

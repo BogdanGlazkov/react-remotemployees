@@ -1,5 +1,5 @@
-@import '../../utils/variables.scss';
-@import '../../utils/mixins.scss';
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .find-more {
   display: flex;
@@ -68,7 +68,7 @@
   &__small-house-image {
     width: 200px;
     @media (max-width: 1360px) {
-      width: 175px;  
+      width: 175px;
     }
   }
 
@@ -157,7 +157,7 @@
   &__house-info {
     width: 330px;
     @media (max-width: 1360px) {
-      width: 300px;  
+      width: 300px;
     }
   }
 
@@ -192,7 +192,7 @@
     line-height: 24px;
 
     @media (max-width: 1360px) {
-      width: 480px;  
+      width: 480px;
     }
 
     @include onMobile {
@@ -206,7 +206,7 @@
 
   &__big-house {
     @media (max-width: 1360px) {
-      width: 480px;  
+      width: 480px;
     }
 
     @include onMobile {
@@ -228,12 +228,16 @@
     bottom: 210px;
     left: -200px;
     height: 694px;
-    background: radial-gradient(circle at center, rgba(130, 255, 232, 0.5), white 60%);
+    background: radial-gradient(
+      circle at center,
+      rgba(130, 255, 232, 0.5),
+      white 60%
+    );
 
     @include onMobile {
       width: 310px;
     }
-  
+
     @include onTablet {
       width: 638px;
     }
@@ -245,7 +249,11 @@
     bottom: -90px;
     left: -210px;
     height: 694px;
-    background: radial-gradient(circle at center, rgba(200, 255, 130, 0.5), transparent 40%);
+    background: radial-gradient(
+      circle at center,
+      rgba(200, 255, 130, 0.5),
+      transparent 40%
+    );
   }
 
   @include onMobile {

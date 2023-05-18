@@ -1,6 +1,7 @@
 # RemotEmployees
 
 This is a landing page with adaptive layout and animations..\
+App link: https://bogdanglazkov.github.io/react-remotemployees
 
 ## Technologies
 
